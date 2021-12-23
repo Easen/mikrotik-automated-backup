@@ -24,7 +24,7 @@
 /system backup save name=$backupFileSys password=$backupPassword;
 :log info "$scriptName System Backup ...Done";
 
-/export terse file=$backupFileConfig;
+/export show-sensitive terse file=$backupFileConfig;
 :log info "$scriptName System Config Export ...Done";
 
 /user export terse file=$backupFileUser
